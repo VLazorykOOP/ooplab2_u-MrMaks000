@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EncryptionAndDecryption.cpp" />
     <ClCompile Include="Examples.cpp" />
     <ClCompile Include="Tasks.cpp" />
     <ClCompile Include="OOPLab2Tpl.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EncryptionAndDecryption.h" />
     <ClInclude Include="Examples.h" />
     <ClInclude Include="Tasks.h" />
   </ItemGroup>

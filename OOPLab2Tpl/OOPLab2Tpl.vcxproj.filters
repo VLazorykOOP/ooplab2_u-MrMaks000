@@ -24,12 +24,18 @@
     <ClCompile Include="Examples.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="EncryptionAndDecryption.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tasks.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
     <ClInclude Include="Examples.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="EncryptionAndDecryption.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

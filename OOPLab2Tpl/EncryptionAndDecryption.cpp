@@ -83,6 +83,27 @@ void EncryptionS(char InS[128], TextCode OutCoding[128])
 	}
 }
 
+void DecryptionS(char InS[128], TextCode OutCoding[128])
+{
+	unsigned char c;
+	unsigned short r, t, i;
+	short j;
+	for (int j = 0; j < 128; j++)            //
+	{
+		c = 0;
+		c |= OutCoding[j].schkb << 4;
+		c |= OutCoding[j].mchkb;
+		i = OutCoding[j].posrow;
+		r = bitp(c);
+		t = bitp(static_cast<unsigned char>(i));
+		if (OutCoding[j].bitp != r ^ t);
+
+		InS[i] = c;		
+	}
+}
+
+
+
 int DecryptionString(char OutS[128], unsigned short InCoding[128]) {
 
 	unsigned char c;
@@ -240,7 +261,9 @@ void SEncryption2() {
 		cout << "Data write to outbs.bin " << endl;
 		cout << S << endl;
 	}
+
+	DecryptionS(S, Rez);
+	cout << S << endl;
+
 	cin.get();
-
 }
-
